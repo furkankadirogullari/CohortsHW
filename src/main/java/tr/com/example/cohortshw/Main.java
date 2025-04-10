@@ -24,7 +24,7 @@ public class Main {
         System.out.println("Tüm evlerin ortalama metrekaresi: " + service.averageSquareMeters(HomeData.getAllHome()));
 
         System.out.println("3 oda 1 salon evler:");
-        service.filterByRoomHall(3, 1).forEach(home -> System.out.println(home.getType() + " ---> " + home.getPrice()));
+        service.filterByRoomHall(4, 1).forEach(home -> System.out.println(home.getType() + " ---> " + home.getPrice()));
     }
 
 
