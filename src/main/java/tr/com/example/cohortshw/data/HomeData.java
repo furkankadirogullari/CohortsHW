@@ -9,9 +9,9 @@ public class HomeData {
 
     public static List<Home> getApartmentList() {
         List<Home> apartments = new ArrayList<>();
-        apartments.add(new Home("Apartment", 1000000, 120, 3, 1));
-        apartments.add(new Home("Apartment", 1200000, 130, 2, 1));
-        apartments.add(new Home("Apartment", 1100000, 110, 4, 1));
+        apartments.add(new Home("Daire", 1000000, 120, 3, 1));
+        apartments.add(new Home("Daire", 1200000, 130, 2, 1));
+        apartments.add(new Home("Daire", 1100000, 110, 4, 1));
         return apartments;
     }
 
@@ -25,9 +25,9 @@ public class HomeData {
 
     public static List<Home> getSummerHouseList() {
         List<Home> summerHouse = new ArrayList<>();
-        summerHouse.add(new Home("Summer House", 1500000, 140, 3, 1));
-        summerHouse.add(new Home("Summer House", 1700000, 160, 4, 1));
-        summerHouse.add(new Home("Summer House", 1800000, 180, 4, 2));
+        summerHouse.add(new Home("Yazlık", 1500000, 140, 3, 1));
+        summerHouse.add(new Home("Yazlık", 1700000, 160, 4, 1));
+        summerHouse.add(new Home("Yazlık", 1800000, 180, 4, 2));
         return summerHouse;
     }
 

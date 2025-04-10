@@ -6,10 +6,10 @@ import tr.com.example.cohortshw.data.HomeData;
 import tr.com.example.cohortshw.service.HomeService;
 
 @SpringBootApplication
-public class CohortsHwApplication {
+public class Main {
 
     public static void main(String[] args) {
-        SpringApplication.run(CohortsHwApplication.class, args);
+        SpringApplication.run(Main.class, args);
 
         HomeService service = new HomeService();
 
