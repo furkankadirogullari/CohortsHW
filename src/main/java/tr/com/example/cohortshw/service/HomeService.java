@@ -21,6 +21,15 @@ public class HomeService {
     }
     //Filter by Room and Hall
     public List<Home> filterByRoomHall(int room, int hall) {
+        if(hall == 1 && (room < 2 || room > 4)) {
+            System.out.println("Girdiğiniz kriterlerde ev bulunmamaktadır.");
+        }
+        if(hall == 2 && (room < 4 || room > 6)) {
+            System.out.println("Girdiğiniz kriterlerde ev bulunmamaktadır.");
+        }
+        if(hall == 3 && (room != 7)) {
+            System.out.println("Girdiğiniz kriterler ev bulunmamaktadır.");
+        }
         return HomeData.getAllHome().stream()
                 .filter(e -> e.getNumberOfRoom() == room && e.getNumberOfHall() == hall)
                 .collect(Collectors.toList());
